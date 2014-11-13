@@ -1,0 +1,27 @@
+# !/bin/sh
+
+#
+# ~/.xinitrc
+#
+# Exceuted by starts (run your window manager from here)
+#
+
+## Ensure that the D-Bus Communication System is running properly to fix
+## File management, authentication, and other essential system processes
+if which dbus-launch>/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+	eval "$(dbus-launch --sh-syntax --exit-with-session)"
+fi
+
+# Load .Xresources
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+# Add font paths
+xset fp default
+[[ -d $HOME/.local/share/fonts ]] && xset +fp $HOME/.local/share/fonts
+xset fp rehash
+
+sh ~/bin/dwm-start.sh
+
+exec dwm
+
+exec $1

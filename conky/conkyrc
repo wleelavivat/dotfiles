@@ -1,0 +1,16 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 1.0
+total_run_times 0
+use_spacer none
+double_buffer yes
+override_utf8_locale yes
+
+TEXT
+${exec echo -e "\x05\uE01A\x04 \uE00F"} ${cpu cpu0}% ${exec echo -e "\x06\uE01B\x04"} \
+${exec echo -e "\uE010"} $memperc% ${exec echo -e "\x06\uE01A\x01"} \
+${exec echo -e "\uE011"} ${downspeed eth0}/s ${exec echo -e "\x05\uE01B\x01"} \
+${exec echo -e "\uE012"} ${upspeed eth0}/s ${exec echo -e "\x05\uE01A\x04"} \
+${exec echo -e "\uE016"} ${time %a %b %d %y %I:%M:%S%P %Z}
+

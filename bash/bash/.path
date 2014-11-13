@@ -1,0 +1,2 @@
+# Here’s an example ~/.path file that adds ~/utils to the $PATH:
+# export PATH="$HOME/utils:$PATH"
