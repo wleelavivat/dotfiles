@@ -50,15 +50,16 @@ set wildignore+=*.png,*.jpg,*.gif
 " ================= Keybindings =====================
 " ===== Leader
 let mapleader=","              " Change leader to ","
-" ===== Buffer
-nmap <Esc>[27;5;9~ <C-Tab>
-nmap <Esc>[27;6;9~ <C-S-Tab>
-nmap <C-Tab> :bn<CR>
-nmap <C-S-Tab> :bp<CR>
-
+" ===== Standard Shortcut
+nmap <C-n> :enew <CR>
+nmap <C-j> :bn <CR>
+nmap <C-k> :bp <CR>
 " ===== Newline without enter insert mode
-nmap <S-Enter> O<Esc>
+nmap <S-CR> O<Esc>
 nmap <CR> o<Esc>
+" ===== Insert time (W3C Format)
+nmap <F3> a<C-R>=strftime("%FT%T%z")<CR><Esc>
+imap <F3> <C-R>=strftime("%FT%T%z")<CR>
 
 " ================ Plugin Config ====================
 " ===== Colorizer
