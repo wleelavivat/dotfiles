@@ -2,7 +2,7 @@
 # See the README for examples.
 [core]
   editor = vim
-  excludesfile = ~/.yadr/git/gitignore
+  excludesfile = ~/.dotfiles/git/gitignore
 
 [apply]
     whitespace = fix
@@ -20,9 +20,11 @@
 
 [mergetool]
   prompt = false
+
 [mergetool "vimdiff"]
   cmd="vim -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
   keepbackup=false
+
 [merge]
   summary = true
   verbosity = 1
