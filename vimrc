@@ -52,8 +52,10 @@ set wildignore+=*.png,*.jpg,*.gif
 let mapleader=","              " Change leader to ","
 " ===== Standard Shortcut
 nmap <C-n> :enew <CR>
-nmap <C-j> :bn <CR>
-nmap <C-k> :bp <CR>
+nmap <F9> :w <CR>
+nmap <F10> :bd <CR>
+nmap <F11> :bp <CR>
+nmap <F12> :bn <CR>
 " ===== Newline without enter insert mode
 nmap <S-CR> O<Esc>
 nmap <CR> o<Esc>
