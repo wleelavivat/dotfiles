@@ -29,6 +29,7 @@ Plugin 'gmarik/vundle'
 
 " Appearance  {
   Plugin 'nanotech/jellybeans.vim'
+  Plugin 'acarapetis/vim-colors-github'
   Plugin 'bling/vim-airline'
   Plugin 'edkolev/tmuxline.vim'
   Plugin 'jby/tmux.vim'
