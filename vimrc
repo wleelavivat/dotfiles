@@ -77,6 +77,9 @@ command! -bang QA qa<bang>
 command! -bang Qa qa<bang>
 
 " ================ Plugin Config ====================
+" ===== Theme
+colorscheme jellybeans
+
 " ===== Colorizer
 let g:colorizer_auto_color = 1
 
@@ -98,17 +101,6 @@ nnoremap <silent> <leader>tt :TagbarToggle<CR>
 
 " ===== Gundo
 nnoremap <F5> :GundoToggle<CR>
-
-" ===== Solarized
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
-colorscheme solarized
-call togglebg#map("<F6>")
 
 " ===== CtrlP
 " === CtrlP - don't recalculate files on start (slow)
