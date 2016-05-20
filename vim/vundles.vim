@@ -28,7 +28,7 @@ Plugin 'gmarik/vundle'
 " }
 
 " Appearance  {
-  Plugin 'nanotech/jellybeans.vim'
+  Plugin 'chriskempson/vim-tomorrow-theme'
   Plugin 'acarapetis/vim-colors-github'
   Plugin 'bling/vim-airline'
   Plugin 'edkolev/tmuxline.vim'
@@ -83,7 +83,7 @@ Plugin 'gmarik/vundle'
   Plugin 'ecomba/vim-ruby-refactoring'
   Plugin 'tpope/vim-rails'
   Plugin 'tpope/vim-rake'
-  Plugin 'tpope/vim-rvm'
+  Plugin 'tpope/vim-rbenv'
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'Keithbsmiley/rspec.vim'
   Plugin 'ck3g/vim-change-hash-syntax'

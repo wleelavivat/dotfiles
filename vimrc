@@ -13,6 +13,7 @@ syntax on                       " Turn on syntax highlighting
 filetype plugin indent on       " Automatically detect file types.
 set t_Co=256                    " Change to 256 Color
 set number                      " Line numbers are good
+set relativenumber              " Relative line numbers are also good
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
 set showcmd                     " Show incomplete cmds down the bottom
@@ -78,7 +79,11 @@ command! -bang Qa qa<bang>
 
 " ================ Plugin Config ====================
 " ===== Theme
-colorscheme jellybeans
+" colorscheme Tomorrow
+colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night-Bright
+" colorscheme Tomorrow-Night-Blue
+" colorscheme Tomorrow-Night-Eighties
 
 " ===== Colorizer
 let g:colorizer_auto_color = 1

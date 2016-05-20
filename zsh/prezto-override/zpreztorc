@@ -35,6 +35,7 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'git' \
   'ruby' \
+  'node' \
   'syntax-highlighting' \
   'history-substring-search' \
   'ssh' \
